@@ -8,12 +8,15 @@ Working:
 * Graphics
 * Sound
 * Wifi
+* Hotspot
 * Bluetooth
 * Sensors
 * GPS
+* Video
 
 Known issues:
 * Camera is not working
+* USB Tethering is not working
 * Can not send/receive MMS
 * Can not get fake sender number of received SMS (Internet SMS, etc...)
 * Properiatary softwares are not working ( OSP, DMB, etc...)
