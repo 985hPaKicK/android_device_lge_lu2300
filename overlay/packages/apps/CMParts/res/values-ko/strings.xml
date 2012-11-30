@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="input_search_key_title">지식사전 버튼 동작</string>
+    <string name="input_search_key_summary">지식사전 버튼을 누를 때나 길게 눌렀을때 수행할 동작을 지정합니다.</string>
+    <string name="pref_input_custom_search_app_toggle_title">지식사전 키 앱</string>
+    <string name="pref_input_custom_search_app_toggle_summary">지식사전 키를 눌렀을 때 사용자 지정 앱을 실행합니다.</string>
+    <string name="pref_input_custom_search_app_activity_title">사용자 지정 앱</string>
+    <string name="pref_input_custom_long_search_app_toggle_title">길게 눌렀을때 실행할 앱</string>
+</resources>

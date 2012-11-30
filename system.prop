@@ -1,0 +1,54 @@
+#
+# system.prop for lu2300
+#
+
+rild.libpath=/system/lib/libril-qc-1.so
+rild.libargs=-d /dev/smd0
+
+DEVICE_PROVISIONED=1
+debug.sf.hw=1
+dalvik.vm.heapsize=32m
+
+dalvik.vm.dexopt-data-only=1
+
+#
+# LGE ADDITIONAL_BUILD_PROPERTIES LU2300
+# Insert Below
+
+ro.sf.lcd_density=240
+
+#default_network : 0 - WCDMA,  4 - CDMA
+ro.telephony.default_network=4
+#default_service_provider :  SKT, KT, LGT
+ro.telephony.service_provider=LGT
+
+# LGE_CHANGE :: chulkwon.shin :: mnc/mcc value for Google QA
+ro.cdma.home.operator.numeric=45006
+ro.cdma.home.operator.alpha=LGT
+
+# LGE_CHANGE : Google Login Service
+gsm.operator.alpha=LGT
+gsm.operator.numeric=45006
+
+# LGE_CHANGE : LGU+ 3G data mode tracking [jinho.hwang@lge.com][2011.01.10]
+lgt.3g.data.mode=1
+
+# Wifi
+wifi.supplicant_scan_interval=20
+wifi.interface=wlan0
+
+#
+# ADDITIONAL_BUILD_PROPERTIES
+#
+
+media.stagefright.enable-player=false
+media.stagefright.enable-meta=false
+media.stagefright.enable-scan=false
+media.stagefright.enable-http=false
+ro.com.google.clientidbase=android-lge
+ro.com.google.clientidbase.gmm=android-lge
+ro.com.google.clientidbase.yt=android-lge
+ro.com.google.clientidbase.am=android-lge
+ro.com.google.clientidbase.vs=android-lge
+ro.opengles.version=131072
+net.bt.name=Android

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE properties [
+	<!ELEMENT properties (property*)>
+	<!ELEMENT property (#PCDATA)>
+		<!ATTLIST property 
+					id	ID		#REQUIRED
+					type	CDATA	#REQUIRED
+					key	CDATA	#REQUIRED
+					pvalue	CDATA	#IMPLIED
+		>
+]>		
+<!-- Copyright (C) 2010 LGE
+	 This file is used to define the mappings between LGU+ handset properties 
+     with system properties or constraint values for LGU+ applications.    
+-->
+<properties>
+    <!-- Network Identification -->
+    <property id="NID" type="SP" key="ril.cdma.nid"></property>
+    
+    <!-- System Identification -->
+    <property id="SID" type="SP" key="ril.cdma.sid" ></property>
+    
+    <!-- Base station Identification -->			
+    <property id="BASEID" type="SP" key="ril.cdma.baseid" ></property>
+	
+    <!-- Base station Latitude -->	    			
+    <property id="BASELAT" type="SP" key="ril.cdma.baselat" ></property>
+    
+    <!-- Base station longitude -->
+    <property id="BASELONG" type="SP" key="ril.cdma.baselong" ></property>
+    
+    <!-- ESN Number -->
+    <property id="ESN" type="SP" key="ril.cdma.phone.id" ></property>
+    
+    <!-- Primary Domain Name Server -->
+    <property id="DNS1" type="SP" key="net.rmnet0.dns1" pvalue="211.43.200.81"></property>
+    
+    <!-- Secondary Domain Name Server -->
+    <property id="DNS2" type="SP" key="net.rmnet0.dns2" pvalue="211.60.220.51"></property>
+	
+    <!-- Current Channel number -->
+    <property id="CURRENTCH" type="SP" key="ril.cdma.currentch" ></property>
+	
+    <!-- Best PN sized 4 in decimal -->
+    <property id="BESTPN" type="SP" key="ril.cdma.bestpn" ></property>
+	
+    <!-- Roaming Area Code - None : 0, KTF : 1, Global Roaming Area : 2, USA : 3,JAPAN : 4, CHINA : 5  -->
+    <property id="ROAMING_AREA" type="SP" key="ril.cdma.roamingarea" ></property>
+    
+    <!-- WIPI Billing Gateway IP -->
+    <property id="BILL_GW_IP" type="CV" key="wipigw.ez-i.co.kr:20000" ></property>
+    
+    <!-- Device Group Number -->
+	<property id="DEVICE_GROUP" type="CV" key="2435" ></property>
+    
+    <!-- Processor Information (Core/Instruction clock)-->
+    <property id="PROCESSOR_INFO" type="CV" key="ARM9/150" ></property>
+    
+    <!-- MDN -->
+    <property id="PHONE_NUMBER" type="SP" key="persist.ril.mdn" ></property>
+    
+    <!-- Register -->
+    <property id="REG" type="SP" key="ril.cdma.maintreq" ></property>
+    
+    <!-- Authentication -->
+    <property id="AUTH" type="SP" key="ril.cdma.authlock" ></property>
+    
+    <!-- Network Type -->
+    <property id="NETWORK_TYPE" type="SP" key="gsm.network.type" ></property>
+    
+    <!-- Data Network Mode( 0 : Disallowed, 2 : Allowed ) -->
+    <property id="PREFERRED_DATA_NETWORK_MODE" type="SP" key="lgt.3g.data.mode" ></property>
+    
+    <!-- Data State( 0 : Denied,1 : Allowed ) -->
+    <property id="LGT_DATA_NETWORK_3G_STATE" type="CV" key="1" ></property>
+    
+    <!-- WIPI Network Error Code -->
+    <property id="WIPINET_VAL" type="SP" key="ril.cdma.wipinetval" ></property>
+    
+    <!-- OZLite StartPage -->
+    <property id="LGT_OZ_STARTPAGE" type="CV" key="http://wap20.ez-i.co.kr" ></property>
+    
+    <!-- Network Time -->
+    <property id="NETWORK_TIME" type="NT" key="RFC2445" ></property>
+
+</properties>
